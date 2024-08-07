@@ -1,0 +1,391 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Main Color */
+:root {
+  --lightpurple: #c5bdff;
+  --poppins: "Poppins", sans-serif;
+  --black: #021526;
+  --abril: "Abril Fatface", cursive;
+  --lato: "Lato", sans-serif;
+  --purple: #9485ff;
+  --darkgray: #6e6c78;
+  --white: #ffffff;
+  --lightgray: #898796;
+  --oren: #ff8343;
+  --lightoren: #ffb22c;
+}
+::selection {
+  color: var(--oren);
+  background: CornflowerBlue;
+  background-color: var(--black);
+}
+.nav-scrolled {
+  background: var(--darkgray) !important;
+}
+/*Navbar*/
+.navbar {
+  font-family: var(--poppins);
+  background-color: var(--darkgray) !important;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+.navbar .container-fluid .navbar-item {
+  font-size: 28.5px;
+  letter-spacing: 2px;
+  font-weight: 550;
+  color: black;
+  text-decoration: none;
+}
+.navbar .container-fluid .span {
+  color: var(--oren);
+}
+.navbar .navbar-nav .nav-item a {
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+}
+.d-flex .btn {
+  font-size: 15px;
+  background-color: black;
+  border-radius: 50px;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 13px 19px;
+}
+.d-flex .btn:hover {
+  background-color: var(--oren);
+  color: var(--white);
+  transition: 0.5;
+}
+/*jumbotron*/
+.profil img {
+  display: none;
+  width: 300px;
+}
+.profil {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.jumbotron .text {
+  padding-top: 0;
+  padding-bottom: 6rem;
+}
+.jumbotron {
+  background-size: cover;
+  height: 100vh;
+  margin-top: -74px;
+  background-position: center;
+}
+.jumbotron .text h2 {
+  text-transform: uppercase;
+  font-family: var(--lato);
+  font-size: 24px;
+  font-weight: 300;
+  padding-top: 9.5rem;
+}
+.jumbotron .text h1 {
+  text-transform: capitalize;
+  font-family: var(--abril);
+  font-size: 75px;
+  color: black;
+  overflow: hidden;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+
+  49% {
+    background-color: #ccc;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+.jumbotron .text h1 .cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.jumbotron .text h1 .cursor .typing {
+  animation: none;
+}
+.jumbotron .text span {
+  color: var(--oren);
+}
+
+.jumbotron .text h3 {
+  text-transform: capitalize;
+  font-family: var(--poppins);
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  padding-bottom: 25px;
+}
+.jumbotron .text h3::after {
+  content: "";
+  display: block;
+  border-right: 7px solid var(--lightoren);
+  width: 5px;
+}
+.jumbotron .sosial-media a {
+  text-decoration: none;
+  color: var(--lightgray);
+  padding-right: 25px;
+  width: 50px;
+  height: 50px;
+}
+/*About*/
+#about {
+  padding-bottom: 4rem;
+  background-color: var(--black);
+}
+.text-about {
+  padding-top: 5rem;
+}
+.text-about h1 {
+  font-family: var(--abril);
+  font-size: 50px;
+  text-align: left;
+  padding-bottom: 20px;
+  color: white;
+}
+.text-about h1:after {
+  content: "";
+  display: block;
+  border-bottom: 7px solid var(--oren);
+  width: 20%;
+  padding-bottom: 2px;
+  margin-bottom: -9px;
+}
+.text-about span {
+  color: var(--oren);
+}
+.text-about p {
+  font-family: var(--poppins);
+  font-size: 23px;
+  text-transform: none;
+  color: white;
+}
+.about-img {
+  padding-top: 9rem;
+  display: none;
+}
+
+/*skills&toools*/
+#skills {
+  padding: 4rem 0;
+}
+.title-skills h1 {
+  font-family: var(--abril);
+  font-size: 50px;
+  padding-bottom: 4rem;
+}
+.title-skills h1:after {
+  content: "";
+  display: block;
+  border-bottom: 7px solid var(--oren);
+  width: 8%;
+  padding-bottom: 9px;
+  margin-bottom: -9px;
+}
+.main-card .php {
+  width: 213px;
+  height: 213px;
+}
+.title-skills span {
+  color: var(--oren);
+}
+#skills .container-fluid .gambar-skills .col-lg-3 {
+  padding-bottom: 3.5rem;
+}
+#skills .container-fluid .gambar-skills .col-lg-3 img:hover {
+  filter: invert(15%);
+}
+
+/*Contact*/
+#contact {
+  background-color: var(--black);
+  padding: 6rem 0;
+  background-image: url(img/contact.png);
+  background-size: cover;
+}
+.img-contact {
+  margin-top: -1.5rem;
+}
+.contact-title h1 {
+  text-transform: capitalize;
+  font-family: var(--abril);
+  font-size: 50px;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: white;
+}
+
+.contact-title span {
+  color: var(--oren);
+}
+#contact form .form-label {
+  font-family: var(--poppins);
+  font-size: 22px;
+}
+#contact form input {
+  border-radius: 0%;
+  color: var(--oren);
+}
+#contact textarea {
+  border-radius: 0%;
+  color: var(--oren);
+}
+/* Footer */
+footer {
+  background-color: var(--lightgray);
+  font-size: 21px;
+}
+.footer a {
+  text-decoration: none;
+  font-family: var(--poppins);
+}
+
+/*deskop version biasa*/
+@media (min-width: 992px) {
+  /*navbar*/
+  .navbar {
+    padding: 0.5rem 3rem;
+    background: transparent;
+  }
+  .navbar .navbar-nav .nav-item {
+    padding: 3px 10px;
+  }
+  .navbar .navbar-nav .nav-item a {
+    background: linear-gradient(to right, var(--white), var(--oren));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s ease-out;
+  }
+  .navbar .navbar-nav .nav-item a:hover {
+    background-position: -100%;
+  }
+  /* jumbotron */
+  #home {
+    padding: 20px;
+    background-image: url(img/ABOUT.png);
+    background-size: cover;
+  }
+  .jumbotron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profil img {
+    margin-right: 60px;
+    float: right;
+    display: flex;
+    margin-top: -400px;
+  }
+  .jumbotron .text {
+    padding-left: 4rem;
+    top: 36%;
+    position: absolute;
+  }
+  .jumbotron .text h2 {
+    text-transform: uppercase;
+    font-family: var(--lato);
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 0;
+  }
+  .jumbotron .text h1 {
+    text-transform: capitalize;
+    font-family: var(--abril);
+    font-size: 85px;
+    color: black;
+  }
+  .jumbotron .text span {
+    color: var(--oren);
+  }
+  .jumbotron .text h3 {
+    text-transform: capitalize;
+    font-family: var(--poppins);
+    font-size: 26px;
+    font-weight: 400;
+    display: flex;
+    padding-bottom: 25px;
+  }
+  .jumbotron .text h3::after {
+    content: "";
+    display: block;
+    border-right: 7px solid var(--lightoren);
+    width: 4%;
+  }
+  .jumbotron .sosial-media a {
+    text-decoration: none;
+    color: var(--lightgray);
+    padding-right: 25px;
+    width: 70px;
+    height: 70px;
+  }
+  .jumbotron .sosial-media a:hover {
+    color: var(--oren);
+  }
+  /*About*/
+  .text-about {
+    padding: 5rem 0 0 4rem;
+  }
+  .text-about h1 {
+    color: white;
+    font-size: 65px;
+  }
+  .text-about span {
+    color: var(--oren);
+  }
+  .text-about p {
+    color: var(--white);
+    font-size: 25px;
+  }
+  #about {
+    background-color: var(--black);
+    background-size: cover;
+    height: auto;
+  }
+  .about-img {
+    padding-top: 5rem;
+    display: flex;
+  }
+
+  /*skills&tools*/
+  #skills {
+    background-image: url(img/SKILLS.png);
+    background-size: cover;
+  }
+  .title-skills h1 {
+    padding-left: 4rem;
+    font-size: 65px;
+  }
+  .gambar-skills {
+    padding-left: 4rem;
+  }
+}
